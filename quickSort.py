@@ -13,7 +13,7 @@ def quickSort(list):
             lessThanPivot.append(item)
         else:
             greaterThanPivot.append(item)
-    #print("%15s %1s %-15s" % (lessThanPivot, pivot, greaterThanPivot))
+ 
     return quickSort(lessThanPivot) + [pivot] + quickSort(greaterThanPivot)
 
 number = [4, 1, 8, 2, 9, 7]
